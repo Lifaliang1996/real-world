@@ -46,5 +46,9 @@ module.exports = {
       })
     }
   },
+  server: {
+    host: process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost',
+    port: '3000'
+  },
   plugins: ['~/plugins/element-ui', '~/plugins/request', '~/plugins/format']
 }
