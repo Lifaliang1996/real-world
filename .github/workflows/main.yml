@@ -53,6 +53,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
+          cd /root
           rm -rf realworld-nuxtjs
           mkdir realworld-nuxtjs
           cd /root/realworld-nuxtjs
